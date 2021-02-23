@@ -12,11 +12,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
  */
 public class Conexion {
     public DriverManagerDataSource Conectar(){
-        DriverManagerDataSource Datasource = new DriverManagerDataSource();
-        Datasource.setDriverClassName("com.mysql.jdbc.Driver");
-        Datasource.setUrl("jdbc:mysql://http://localhost:8080/crud_sb/registro");
-        Datasource.setUsername("root");
-        Datasource.setPassword("123456");
-        return Datasource;
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/registro");
+        dataSource.setUsername("root");
+        dataSource.setPassword("");
+        return dataSource;
     }
 }
